@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PoopText v.1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>672</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Char</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Font</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Size</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Italic</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bold</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Preview</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButtonAdd">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>230</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add character</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClear">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>290</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear all</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBspace">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>260</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete last</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
